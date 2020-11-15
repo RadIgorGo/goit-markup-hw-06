@@ -193,7 +193,8 @@ img {
   color: var(--title-cl);
 }
 
-.bt-main {
+.bt-main,
+.bt-email {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -376,18 +377,23 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.bt-main:hover,
-.bt-main:focus {
+.bt-main,
+.bt-email:hover,
+.bt-main,
+.bt-email:focus {
   color: var(--white);
 }
-.bt-main {
+.bt-main,
+.bt-email {
   height: 50px;
   width: 200px;
   border-radius: 4px;
   border: none;
 }
-.bt-main:hover,
-.bt-main:focus {
+.bt-main,
+.bt-email:hover,
+.bt-main,
+.bt-email:focus {
   color: var(--gray);
   cursor: pointer;
 }
@@ -872,9 +878,16 @@ img {
   right: 0px;
   bottom: 0px;
 }
+.close:hover .fill-svg {
+  fill: var(--accent-cl);
+}
+/* .fill-svg:hover {
+  fill: var(--accent-cl);
+} */
 .link-menu,
 .link,
 .bt-main,
+.bt-email,
 .pos-social,
 .instagram-svg,
 .instagram-svg1,
@@ -914,4 +927,35 @@ img {
   100% {
     transform: scale(1);
   }
+}
+.mailing {
+  display: flex;
+  height: 86px;
+  width: 570px;
+  margin-top: 12px;
+  margin-bottom: 94px;
+  margin-left: 93px;
+}
+.bt-email {
+  display: block;
+  margin-top: 36px;
+  margin-left: auto;
+}
+.mailing .little-name {
+  display: block;
+  margin-top: 0px;
+  color: var(--white);
+}
+.input-mailing {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  background-color: inherit;
+  border-radius: 4px;
+}
+.pos-mailing {
+  display: block;
 }
