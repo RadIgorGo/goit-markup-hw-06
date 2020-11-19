@@ -307,15 +307,22 @@ img {
   align-items: center;
 }
 
+.list-menu,
+.list-nav,
+.list-app,
+.table-app {
+  margin: auto;
+}
 .list,
 .list-menu,
 .list-nav,
 .list-app,
 .table-app {
   list-style: none;
-  margin: auto;
 }
-
+.list {
+  /* margin: auto; */
+}
 .list-menu,
 .list-nav,
 .list-app,
@@ -377,11 +384,12 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.bt-main,
+
 .bt-email:hover,
-.bt-main,
 .bt-email:focus {
-  color: var(--white);
+  color: var(--accent-cl);
+  background-color: var(--white);
+  cursor: pointer;
 }
 .bt-main,
 .bt-email {
@@ -390,13 +398,12 @@ img {
   border-radius: 4px;
   border: none;
 }
-.bt-main,
-.bt-email:hover,
-.bt-main,
-.bt-email:focus {
-  color: var(--gray);
+.bt-main:hover {
+  color: var(--accent-cl);
+  background-color: var(--white);
   cursor: pointer;
 }
+
 .title {
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -472,12 +479,18 @@ img {
   margin: auto;
 }
 .footer {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--gray);
 }
 .address {
   padding-top: 0px;
+  padding-left: 0px;
+}
+.our-address {
+  display: inline-block;
+  margin-top: 0;
 }
 .cl-link {
   padding-top: 9px;
@@ -725,6 +738,7 @@ img {
   fill: var(--accent-cl);
 }
 .our-contacts {
+  display: inline-block;
   margin-top: 12px;
   margin-bottom: auto;
   margin-left: 70px;
@@ -751,9 +765,7 @@ img {
 .call-us .pos-social:not(:last-child) {
   margin-right: 10px;
 }
-.address {
-  display: inline-flex;
-}
+
 .flex-element:hover,
 .flex-element:focus {
   cursor: pointer;
@@ -870,15 +882,22 @@ img {
   border: none;
   border-radius: 50%;
   outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
 }
 .close {
+  height: 18px;
+  width: 18px;
+  margin: auto;
+  border-radius: 0px;
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   bottom: 0px;
+  background-color: var(--white);
 }
-.close:hover .fill-svg {
+.close:hover {
   fill: var(--accent-cl);
 }
 /* .fill-svg:hover {
@@ -904,7 +923,8 @@ img {
 .svg-client6,
 .bt-works,
 .flex-element,
-.modal button {
+.modal button,
+.send {
   transition: var(--time-transition) var(--timing-function);
 }
 .bt-main:hover {
@@ -929,17 +949,18 @@ img {
   }
 }
 .mailing {
-  display: flex;
-  height: 86px;
-  width: 570px;
+  display: inline-flex;
   margin-top: 12px;
-  margin-bottom: 94px;
   margin-left: 93px;
 }
 .bt-email {
-  display: block;
   margin-top: 36px;
-  margin-left: auto;
+  margin-left: 12px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
 }
 .mailing .little-name {
   display: block;
@@ -950,12 +971,34 @@ img {
   width: 358px;
   height: 50px;
   margin-top: 20px;
-
   border: 1px solid rgba(255, 255, 255, 0.3);
-
   background-color: inherit;
   border-radius: 4px;
 }
+/* .input-mailing::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+} */
 .pos-mailing {
   display: block;
+}
+#contacts {
+  display: inline-flex;
+}
+.send {
+  height: 24px;
+  width: 24px;
+  fill: var(--white);
+  margin-left: 10px;
+  display: inline-block;
+}
+.bt-email:hover .send {
+  fill: var(--accent-cl);
 }
