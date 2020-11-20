@@ -194,7 +194,8 @@ img {
 }
 
 .bt-main,
-.bt-email {
+.bt-email,
+.bt-modal {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -392,7 +393,8 @@ img {
   cursor: pointer;
 }
 .bt-main,
-.bt-email {
+.bt-email,
+.bt-modal {
   height: 50px;
   width: 200px;
   border-radius: 4px;
@@ -860,6 +862,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   height: 581px;
   width: 528px;
   border-radius: 4px;
@@ -868,11 +871,11 @@ img {
   transition: var(--time-transition) var(--timing-function);
 }
 
-.modal button:hover,
-.modal button:focus {
+.bt-close:hover,
+.bt-close:focus {
   cursor: pointer;
 }
-.modal button {
+.bt-close {
   position: absolute;
   display: block;
   top: 8px;
@@ -923,7 +926,8 @@ img {
 .svg-client6,
 .bt-works,
 .flex-element,
-.modal button,
+.bt-close,
+.bt-modal,
 .send {
   transition: var(--time-transition) var(--timing-function);
 }
@@ -962,6 +966,7 @@ img {
   text-align: center;
   color: var(--white);
 }
+
 .mailing .little-name {
   display: block;
   margin-top: 0px;
@@ -971,21 +976,32 @@ img {
   width: 358px;
   height: 50px;
   margin-top: 20px;
+  padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: inherit;
   border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3636;
+
+  letter-spacing: 0.06em;
+  color: var(--white);
 }
-/* .input-mailing::placeholder {
-  font-family: Roboto;
+.input-mailing::placeholder {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
-
   letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
-} */
+}
+.input-mailing:focus::placeholder,
+.comments:focus::placeholder {
+  color: transparent;
+}
+
 .pos-mailing {
   display: block;
 }
@@ -1000,5 +1016,144 @@ img {
   display: inline-block;
 }
 .bt-email:hover .send {
+  fill: var(--accent-cl);
+}
+.bt-modal {
+  margin-top: 36px;
+  margin-left: 12px;
+  margin-bottom: 0px;
+
+  color: var(--white);
+  background-color: var(--accent-cl);
+}
+.modal-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.1667;
+  letter-spacing: 0.01em;
+  color: var(--main-text-cl);
+  display: block;
+
+  margin-top: auto;
+  margin-bottom: 4px;
+}
+
+.modal-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  display: block;
+  margin-top: 40px;
+
+  color: var(--title-cl);
+}
+.form-input {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.input-name,
+.input-tel,
+.input-email,
+.input-text {
+  display: block;
+  margin-bottom: 10px;
+
+  width: 448px;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  padding-right: 16px;
+}
+.comments {
+  width: 448px;
+  height: 120px;
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+.comments::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1428;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgba(117, 117, 117, 0.5);
+}
+.check {
+  /* display: inline-flex; */
+}
+.pos-contact {
+  display: inline-flex;
+  align-items: center;
+}
+.contact-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+  color: var(--main-text-cl);
+  margin-left: 8px;
+}
+.link-contract {
+  display: inline-block;
+  line-height: 0.8;
+  margin-left: 4px;
+  color: var(--accent-cl);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-cl);
+}
+.bt-modal {
+  margin: 30px 164px 40px;
+}
+.bt-modal:hover {
+  cursor: pointer;
+}
+.bt-modal:disabled:focus {
+  background-color: var(--white);
+  color: var(--accent-cl);
+}
+.icon-pos {
+  position: relative;
+}
+.table-icon {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+
+.input-name:focus,
+.input-tel:focus,
+.input-email:focus,
+.comments:focus {
+  border-radius: 4px;
+  outline-color: var(--accent-cl);
+}
+.input-name:focus + .table-icon,
+.input-tel:focus + .table-icon,
+.input-email:focus + .table-icon {
   fill: var(--accent-cl);
 }

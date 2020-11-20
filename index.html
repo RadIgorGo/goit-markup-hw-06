@@ -289,7 +289,7 @@
                   <div class="pos-mailing">
                     <span class="little-name">Подпишитесь на рассылку</span>
                     <label  for="email"></label>
-                    <input class="input-mailing" type="text" placeholder="Email" name="email" id="email" />
+                    <input class="input-mailing" type="email" placeholder="Email" name="email" id="email" autocomplete="email" required/>
                   </div>
                   <button class="bt-email" type="submit" >Подписаться<svg class="send">
                     <use href="./images/sprite.svg#send"></use>
@@ -302,9 +302,49 @@
       </footer>
     </main>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal"><button  data-modal-close><svg class="close">
-        <use href="./images/sprite.svg#close"></use>
-        </svg></button></div>
+
+      <div class="modal">
+        <form class="window-modal">
+          <label for="#"></label> 
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-input">
+            <p class="modal-text">Имя</p>
+            <div class="icon-pos">
+              <input class="input-name" type="text" placeholder=" "  autocomplete="name" required autofocus>
+              <svg class="table-icon" >
+              <use href="./images/sprite.svg#person"></use>
+              </svg>
+            </div>
+            <p class="modal-text">Телефон</p>
+            <div class="icon-pos">
+              <input class="input-tel" type="tel" placeholder=" "  autocomplete="tel" required>
+              <svg class="table-icon">
+              <use href="./images/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <p class="modal-text">Почта</p>
+            <div class="icon-pos">
+              <input class="input-email" type="email" placeholder=" " autocomplete="email" required>
+              <svg class="table-icon">
+                <use href="./images/sprite.svg#email"></use>
+              </svg>
+            </div>
+            <p class="modal-text">Комментарий</p>
+            <textarea class="comments" name="comment" rows="5" cols="45" placeholder="Введите текст"></textarea>
+            <div class="pos-contact">
+              <input class= "check" type="checkbox" name="#" id="#" required><span class="contact-text">Соглашаюсь с рассылкой и принимаю<a class="link-contract" href="./contract/contract.docx">Условия договора</a></span>
+              <svg class="">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+            </div>
+          </div>
+          <button class="bt-modal" type="submit">Отправить</button>
+        </form>
+        <button  class="bt-close" data-modal-close>
+          <svg class="close">
+          <use href="./images/sprite.svg#close"></use></svg>
+        </button>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
