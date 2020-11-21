@@ -1099,12 +1099,12 @@ img {
   text-align: left;
   color: rgba(117, 117, 117, 0.5);
 }
-.check {
-  /* display: inline-flex; */
-}
+
 .pos-contact {
   display: inline-flex;
   align-items: center;
+  position: relative;
+  padding-left: 12px;
 }
 .contact-text {
   font-family: "Roboto", sans-serif;
@@ -1114,7 +1114,6 @@ img {
   line-height: 1.7142;
   letter-spacing: 0.03em;
   color: var(--main-text-cl);
-  margin-left: 8px;
 }
 .link-contract {
   display: inline-block;
@@ -1156,4 +1155,32 @@ img {
 .input-tel:focus + .table-icon,
 .input-email:focus + .table-icon {
   fill: var(--accent-cl);
+}
+.check-empty,
+.check-full {
+  height: 15px;
+  width: 16px;
+  position: absolute;
+}
+.check {
+  position: relative;
+}
+.check:checked ~ .check-empty {
+  opacity: 0;
+}
+.check:checked ~ .check-full {
+  opacity: 1;
+  pointer-events: none;
+}
+.check-empty {
+  background-color: var(--white);
+  pointer-events: none;
+}
+.check-full {
+  opacity: 0;
+
+  pointer-events: none;
+}
+.contact-text {
+  padding-left: 12px;
 }
