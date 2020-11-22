@@ -244,69 +244,109 @@
       </div>
      
       <footer class="bg-footer">
-        <div class="container footer">
-          
+        <div class="container footer"> 
           <address id="contacts">
-            <div class="address">  
-              <div class="our-address">
-              <a href="./index.html" class="link-logo">
-                <p class="logo"><span class="part-logo2">Web</span>Studio</p>
-              </a>
-              <ul class="list">
-                <li><a href="https://goo.gl/maps/sJVovR2q1p1uc4ny7" class="link" target="_blank" rel="noopener noreferer"> г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li class="cl-link"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li class="cl-link"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-              </ul>
-              </div>
+            
+            <div class="our-address">
+                  <a href="./index.html" class="link-logo">
+                  <p class="logo"><span class="part-logo2">Web</span>Studio</p>
+                  </a>
+                  <ul class="list">
+                    <li><a href="https://goo.gl/maps/sJVovR2q1p1uc4ny7" class="link" target="_blank" rel="noopener noreferer"> г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="cl-link"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                    <li class="cl-link"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                  </ul>
+            </div>
               <div class="our-contacts">
-                <p class="little-name">Присоединяйтесь</p>
-                <div class="call-us">
-                  <a href="https://www.instagram.com/" class="pos-social" target="_blank" rel="noopener noreferer">
+                  <p class="little-name">Присоединяйтесь</p>
+                  <div class="call-us">
+                    <a href="https://www.instagram.com/" class="pos-social" target="_blank" rel="noopener noreferer">
                     <svg class="instagram-svg1">
                     <use href="./images/sprite.svg#instagram"></use>
                     </svg>
-                  </a>
+                    </a>
                 
-                  <a href="https://twitter.com/?lang=uk/" class="pos-social" target="_blank" rel="noopener noreferer">
+                    <a href="https://twitter.com/?lang=uk/" class="pos-social" target="_blank" rel="noopener noreferer">
                     <svg class="twitter-svg1">
                     <use href="./images/sprite.svg#twitter"></use>
                     </svg>
-                  </a>
+                    </a>
                 
-                  <a href="https://www.facebook.com/" class="pos-social" target="_blank" rel="noopener noreferer">
+                   <a href="https://www.facebook.com/" class="pos-social" target="_blank" rel="noopener noreferer">
                     <svg class="facebook-svg1">
                     <use href="./images/sprite.svg#facebook"></use>
                     </svg>
-                 </a>
+                    </a>
                 
-                  <a href="https://www.linkedin.com/" class="pos-social" target="_blank" rel="noopener noreferer">
+                    <a href="https://www.linkedin.com/" class="pos-social" target="_blank" rel="noopener noreferer">
                     <svg class="linkedin-svg1">
                     <use href="./images/sprite.svg#linkedin"></use>
                     </svg>
-                  </a>
-                </div>
+                    </a>
+                  </div>
                 </div>
                 <form class="mailing">
                   <div class="pos-mailing">
-                    <label class="little-name" for="email">Подпишитесь на рассылку</label>
-                    <input class="input-mailing" type="text" name="email" id="email" />
+                    <label for="email" class="little-name">Подпишитесь на рассылку</label>
+                    <input class="input-mailing" type="email" placeholder="Email" name="email" id="email" autocomplete="email" required/>
                   </div>
-                  <button class="bt-email" type="submit">Подписаться</button>
+                  <button class="bt-email" type="submit" >Подписаться<svg class="send">
+                    <use href="./images/sprite.svg#send"></use>
+                  </svg></button>
+                    
                 </form>
-                </address>
-                </div>
-              </div>
-           
+              
+          </address>
+        </div>
       </footer>
     </main>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal"><button  data-modal-close><svg class="close" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="15" cy="15" r="15" fill="white" />
-        <circle cx="15" cy="15" r="14.5" stroke="black" stroke-opacity="0.1" />
-        <path class="fill-svg"
-          d="M21 10.1079L19.8921 9L15.5 13.3921L11.1079 9L10 10.1079L14.3921 14.5L10 18.8921L11.1079 20L15.5 15.6079L19.8921 20L21 18.8921L16.6079 14.5L21 10.1079Z"
-          fill="black" />
-      </svg></button></div>
+
+      <div class="modal">
+        <form class="window-modal">
+          <label for="#"></label> 
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-input">
+            <p class="modal-text">Имя</p>
+            <div class="icon-pos">
+              <input class="input-name" type="text" name="input-name" placeholder=" "  autocomplete="name" required autofocus>
+              <svg class="table-icon" >
+              <use href="./images/sprite.svg#person"></use>
+              </svg>
+            </div>
+            <p class="modal-text">Телефон</p>
+            <div class="icon-pos">
+              <input class="input-tel" type="tel" name="input-tel" placeholder=" "  autocomplete="tel" required>
+              <svg class="table-icon">
+              <use href="./images/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <p class="modal-text">Почта</p>
+            <div class="icon-pos">
+              <input class="input-email" type="email" name="input-email" placeholder=" " autocomplete="email" required>
+              <svg class="table-icon">
+                <use href="./images/sprite.svg#email"></use>
+              </svg>
+            </div>
+            <p class="modal-text">Комментарий</p>
+            <textarea class="comments" name="comment" rows="5" cols="45" placeholder="Введите текст"></textarea>
+            <div class="pos-contact">
+              <input class= "check" type="checkbox" name="#" id="#" required><span class="contact-text">Соглашаюсь с рассылкой и принимаю<a class="link-contract" href="https://www.youtube.com/watch?v=vYTS66woLvw" target="_blank" rel="noopener noreferer">Условия договора </a></span>
+              <svg class="check-empty">
+                <use href="./images/sprite.svg#square"></use>
+              </svg>
+              <svg class="check-full">
+                <use href="./images/sprite.svg#check"></use>
+              </svg>
+            </div>
+          </div>
+          <button class="bt-modal" type="submit">Отправить</button>
+        </form>
+        <button  class="bt-close" data-modal-close>
+          <svg class="close">
+          <use href="./images/sprite.svg#close"></use></svg>
+        </button>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
