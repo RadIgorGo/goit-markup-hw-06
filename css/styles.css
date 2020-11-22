@@ -982,16 +982,10 @@ img {
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-<<<<<<< HEAD
   font-size: 17px;
-=======
-  font-size: 20px;
->>>>>>> e3f20294f7fbec526d3d4c929588fd7c683773ea
   line-height: 1.3636;
-
   letter-spacing: 0.06em;
   color: var(--white);
-<<<<<<< HEAD
 }
 .input-mailing::placeholder {
   font-family: "Roboto", sans-serif;
@@ -1002,18 +996,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-=======
-}
-.input-mailing::placeholder {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
->>>>>>> e3f20294f7fbec526d3d4c929588fd7c683773ea
+
 .input-mailing:focus::placeholder,
 .comments:focus::placeholder {
   color: transparent;
@@ -1080,15 +1063,10 @@ img {
 .input-text {
   display: block;
   margin-bottom: 10px;
-<<<<<<< HEAD
   width: 448px;
   height: 40px;
-=======
-
   width: 448px;
   height: 40px;
-
->>>>>>> e3f20294f7fbec526d3d4c929588fd7c683773ea
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -1096,10 +1074,7 @@ img {
   padding-bottom: 12px;
   padding-left: 42px;
   padding-right: 16px;
-<<<<<<< HEAD
   transition: var(--time-transition) var(--timing-function);
-=======
->>>>>>> e3f20294f7fbec526d3d4c929588fd7c683773ea
 }
 .comments {
   width: 448px;
@@ -1114,10 +1089,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
-<<<<<<< HEAD
   transition: var(--time-transition) var(--timing-function);
-=======
->>>>>>> e3f20294f7fbec526d3d4c929588fd7c683773ea
 }
 .comments::placeholder {
   font-family: "Roboto", sans-serif;
@@ -1172,10 +1144,7 @@ img {
   position: absolute;
   top: 11px;
   left: 12px;
-<<<<<<< HEAD
   transition: var(--time-transition) var(--timing-function);
-=======
->>>>>>> e3f20294f7fbec526d3d4c929588fd7c683773ea
 }
 
 .input-name:focus,
@@ -1196,7 +1165,7 @@ img {
   width: 16px;
   position: absolute;
 }
-<<<<<<< HEAD
+
 .check:hover {
   cursor: pointer;
 }
@@ -1204,10 +1173,6 @@ img {
   position: relative;
   height: 15px;
   width: 16px;
-=======
-.check {
-  position: relative;
->>>>>>> e3f20294f7fbec526d3d4c929588fd7c683773ea
 }
 .check:checked ~ .check-empty {
   opacity: 0;
@@ -1222,16 +1187,8 @@ img {
 }
 .check-full {
   opacity: 0;
-<<<<<<< HEAD
   pointer-events: none;
 }
 .contact-text {
   padding-left: 8px;
-=======
-
-  pointer-events: none;
-}
-.contact-text {
-  padding-left: 12px;
->>>>>>> e3f20294f7fbec526d3d4c929588fd7c683773ea
 }
