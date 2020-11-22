@@ -1131,7 +1131,7 @@ img {
 .bt-modal:hover {
   cursor: pointer;
 }
-.bt-modal:disabled:focus {
+.bt-modal:checked:focus {
   background-color: var(--white);
   color: var(--accent-cl);
 }
@@ -1192,3 +1192,4 @@ img {
 .contact-text {
   padding-left: 8px;
 }
+/* edit */
